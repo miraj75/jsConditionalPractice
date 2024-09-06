@@ -6,7 +6,7 @@ const reverseNumber = numbers.reverse()
 
 console.log(reverseNumber);
 
-*/
+
  
 //using for loop
 
@@ -18,3 +18,13 @@ for(const num of numbers){
 }
 
 console.log(reverseNumberLoop);
+
+*/
+
+// another way
+const rvsNum = []
+for( let i= numbers.length -1 ;  i>= 0; i-- ){
+  const num = numbers[i]
+  rvsNum.push(num)
+}
+console.log(rvsNum);
